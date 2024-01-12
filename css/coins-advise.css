@@ -1,0 +1,30 @@
+/* Style dla porad numizmatycznych */
+
+.coins-advise h2 {
+  /* Dodaj dowolne dodatkowe style dla nagłówków h2 */
+  color: #D4213D;
+}
+
+.coins-advise li {
+  /* Dodaj dowolne dodatkowe style dla elementów li */
+  list-style: decimal;
+  margin-bottom: 20px; /* Dodatkowy margines między elementami li */
+}
+
+.image-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-list-item img {
+  max-width: 100%; /* Obrazki nie będą większe niż ich kontener */
+  height: auto; /* Automatyczne dostosowanie wysokości */
+}
+
+/* Zmniejszenie obrazków przy małych ekranach */
+@media only screen and (max-width: 600px) {
+  .image-list-item img {
+    max-width: 80%; /* Przy małych ekranach zmniejszamy szerokość obrazka */
+  }
+}

@@ -1,0 +1,75 @@
+/* Wspólne style dla wszystkich monet */
+.coin-img {
+  width: 21vw;
+  height: 21vw;
+  perspective: 100vw;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  position: relative;
+  margin: auto;
+}
+
+.coin-img .face {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition:
+    transform 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98),
+    box-shadow 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98),
+    border-width 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98);
+  box-shadow: 0px 1.2vw 4vw -1vw rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Obrót monety rewers - awers */
+.coin-img.flipped {
+  .coin-r {
+    transform: rotateX(180deg);
+  }
+  .coin-a {
+    transform: rotateX(360deg);
+  }
+}
+
+.coin-img.flipped:hover .coin-r,
+.coin-img.flipped.hover .coin-r {
+  transform: rotateX(200deg);
+}
+
+.coin-img .coin-a {
+  transform: rotateX(180deg);
+}
+
+/* Efekt po najechaniu kursorem dla coin-r */
+.coin-img.flipped:hover .coin-r {
+  transform: rotateX(200deg) rotateY(-10deg);
+}
+
+/* Efekt po najechaniu kursorem dla coin-a */
+.coin-img.flipped:hover .coin-a {
+  transform: rotateX(340deg) rotateY(-10deg);
+}
+
+/* Dodaj style dla indywidualnych monet */
+#coin-1 .coin-r {
+  background-image: url("https://nbp.pl/wp-content/uploads/2022/11/2014_07___25lat_5zl_R.jpg");
+}
+
+#coin-1 .coin-a {
+  background-image: url("https://nbp.pl/wp-content/uploads/2022/11/2014_07___25lat_5zl_A.jpg");
+}
+
+#coin-2 .coin-r {
+  background-image: url("../img/2014_15___zamek_krolewski_w_Warszawie_5zl_R.jpg");
+}
+
+#coin-2 .coin-a {
+  background-image: url("../img/2014_15___zamek_krolewski_w_Warszawie_5zl_A.jpg");
+}

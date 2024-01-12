@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/imports-styles.css"> <!-- Importowane style CSS -->
+    <link rel="stylesheet" href="../css/coins-advise.css"> <!-- Porady numiznatyczne -->
+
+    <!-- Nazwa strony i favicon -->
+    <title>Porady numiznatyczne</title>
+    <link rel="icon" type="image/png" href="../img/logo_moneta.png">
+</head>
+
+<body>
+    <!-- Menu boczne -->
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image-text">
+                <!--- Logo w menu bocznym -->
+                <span class="image">
+                    <img src="../img/logo_moneta.png" alt="logo">
+                </span>
+
+                <!--- Nazwa menu bocznego -->
+                <div class="text header-text">
+                    <span class="name">Monety 5 zł</span>
+                    <span class="subname">"Odkryj Polskę"</span>
+                </div>
+            </div>
+
+            <!-- Strzałka w prawo w menu z https://boxicons.com/?query=arrow + toggle jako przełącznik -->
+            <i class='bx bx-right-arrow-alt toggle' title="Interaktywne menu"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- Wyszukiwanie -->
+                <li class="search-bar">
+                    <!-- Przycisk z https://boxicons.com/ -->
+                    <i class='bx bx-search-alt-2 icon' id="searchIcon" title="Wyszukaj"></i>
+                    <input type="text" id="searchInput" name="search" placeholder="Wyszukaj...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-home icon' title="Strona główna"></i>
+                            <span class="text nav-text">Strona główna</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/coins-series.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-coin-stack icon' title="Monety z serii"></i>
+                            <span class="text nav-text">Monety z serii</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/coins-advise.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-news icon' title="Porady"></i>
+                            <span class="text nav-text">Porady</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/coins-game.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-game icon' title="Gra"></i>
+                            <span class="text nav-text">Gra</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="https://kolekcjoner.nbp.pl" target="_blank">
+                        <!-- Przycisk z https://boxicons.com/ -->
+                        <i class='bx bx-shopping-bag icon' title="Kolekcjoner NBP"></i>
+                        <span class="text nav-text">Kolekcjoner NBP</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <!-- Przycisk z https://boxicons.com/ -->
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Tryb nocny</span>
+
+                    <!-- Przełącznik noc-dzień -->
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+
+        <div class="text">
+
+            <div class="series-title">Porady numiznatyczne</div>
+
+            <!-- Porady numizmatyczne -->
+            <div class="coins-advise">
+
+                <h2>Wprowadzenie do obiegu</h2>
+                <ul>Od 2014 roku po zakończeniu emisji monet 2 zł NBP zaczął emitować serię monet 5 zł Odkryj Polskę.
+                    Rocznie zazwyczaj ukazują się dwie emisje. </ul>
+                    <br>
+
+                <h2>Sposoby przechowywania monet 5 zł</h2>
+                <ul>
+                    
+                    <li>
+                        Album z wysuwanymi paskami, dwie strony bez opisów, gdyż nie wiadomo ile monet i jakie ukarzą się 
+                        w kolejnych latach, naklejki można dokleić w dowolnym czasie.
+                    </li>
+                    <a class="image-list-item">
+                        <img src="../img/album_na_monety_5zl_odkryj_polske.png" alt="Album na monety" width="600">
+                    </a>
+
+                    <li>Palety z kapslami na monety 5 zł minus nie widać drugiej strony monety zabezpieczone na palecie
+                        z zasuwka, palety można umieścić w kuferkach.
+                    </li>
+                    <a class="image-list-item">
+                        <img src="../img/paleta_na_5zl_w_kapslu.png" alt="Paleta z kapslami" width="600">
+                    </a>
+
+                    <li>Blistry, czyli jedna z ciekawszych możliwości przechowywania monet. Moneta w nim jest
+                        zabezpieczona kapslem i wciśnięta do blistra z opisem. Do przechowywania blistrów dostępne są na
+                        rynku walizki aluminiowe. Po każdej emisji ukazuje się nowy blister.
+                    </li>
+                    <a class="image-list-item">
+                        <img src="../img/Blister-na-monete-5-zl-Odkryj-Polske--Brama-Zuraw-w-Gdansku.png" alt="Blister"
+                            width="600">
+                    </a>
+
+                    <li>Holdery samoprzylepne z folią, która nie wchodzi w reakcję chemiczną z metalami monet, dodatkowo
+                        cechują się szczelności i odcięcie dopływu powietrza, dzięki czemu numizmaty mogą zachować swój
+                        pierwotnych wygląd, mimo wielu lat przechowywania. Holdery to najtańsze akcesorium do
+                        przechowywania bezpiecznie monet, dodatkowo dzięki ofercie holderów o najpopularniejszym
+                        rozmiarze pasują one do odpowiednich strona do segregatorów na holdery, klaserów i albumów na
+                        holdery, palet, czy kuferków.
+                    </li>
+                    <a class="image-list-item">
+                        <img src="../img/5zl_holdery.png" alt="Holdery" width="600">
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/s29097-pj" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.youtube.com/@NBPpl" target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/nbppl" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="menu2__item">
+                    <i class='bx bx-home'></i>
+                    <a class="menu2__link" href="../index.html">Strona główna</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-coin-stack'></i>
+                    <a class="menu2__link" href="../pages/coins-series.html">Monety z serii</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-news'></i>
+                    <a class="menu2__link" href="../pages/coins-advise.html">Porady</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-game'></i>
+                    <a class="menu2__link" href="../pages/coins-game.html">Gra</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-shopping-bag'></i>
+                    <a class="menu2__link" href="https://kolekcjoner.nbp.pl" target="_blank">Kolekcjoner NBP</a>
+                </li>
+            </ul>
+
+            <p>&copy;2024 by s29097</p>
+
+        </footer>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="../js/sidebar.js"></script> <!-- Menu boczne -->
+    <script src="js/search-bar.js"></script> <!-- Pole wyszukiwania -->
+
+</body>
+
+</html>

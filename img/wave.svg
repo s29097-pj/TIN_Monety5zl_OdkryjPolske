@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="854.21393"
+   height="86.36438"
+   viewBox="0 0 854.21392 86.364379"
+   sodipodi:docname="wave.svg"
+   inkscape:export-filename="wave.svg"
+   inkscape:export-xdpi="95.97596"
+   inkscape:export-ydpi="95.97596"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="11.229037"
+     inkscape:cx="30.679389"
+     inkscape:cy="27.295305"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch120">
+      <stop
+         style="stop-color:#194446;stop-opacity:1;"
+         offset="0"
+         id="stop120" />
+    </linearGradient>
+    <linearGradient
+       id="swatch119">
+      <stop
+         style="stop-color:#194446;stop-opacity:1;"
+         offset="0"
+         id="stop119" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g1"
+     transform="translate(0.7139238,-0.34666244)">
+    <path
+       style="display:inline;fill:#153a31;fill-opacity:1;stroke:#153a31;stroke-width:0.984482;stroke-opacity:1"
+       d="m -1.5474809,59.975033 0.088869,-25.15376 14.7414226,-5.739385 C 70.840215,6.6726467 167.54636,2.0214556 232.23466,5.5710977 c 75.22274,4.1276987 113.42751,9.7231283 195.4509,28.6255293 97.92115,22.566072 147.57771,28.319717 234.40968,27.160756 77.98506,-1.040879 122.61395,-7.200349 191.08891,-26.373205 1.64328,-0.460111 1.75764,1.207516 1.75764,25.627731 V 86.731778 H 426.56366 -1.8144599 Z"
+       id="path114"
+       sodipodi:nodetypes="ccsssssscccc" />
+  </g>
+</svg>

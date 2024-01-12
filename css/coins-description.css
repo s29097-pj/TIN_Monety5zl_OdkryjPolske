@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+
+body {
+  width: 100%;
+  height: 100%;
+  color: aliceblue; /* Kolor nazw zakładek */
+  margin: 0;
+  padding: 0;
+}
+  
+#container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #67bd4f, #25690d 120%); /* Tło zawartośći slajdu monety */
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: auto;
+}
+
+h1 { font-size: 32px; color: #D4213D;; text-shadow: 4px 4px 12px rgba(213, 245, 176, 0.5); /* Cień tekstu */}
+h2 { font-size: 26px; }
+h3 { font-size: 18px; }
+p { margin: 0 0 15px; line-height: 24px; color: gainsboro; }
+a { color: rgb(38, 255, 30); text-decoration: none; border-bottom: none; }
+a:hover { color: rgb(127, 151, 78); }
+
+/* Zakładki - okno */
+.tabs {
+  position: relative;
+  display: flex;
+  height: 300px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.tabby-tab {
+  flex: 1;
+}
+
+.tabby-tab label {
+  display: block;
+  box-sizing: border-box;
+  /* tab content must clear this */
+    height: 40px;
+  
+  padding: 10px;
+  text-align: center;
+  background: #95b464e5; /* Zakładki w tle */
+  cursor: pointer;
+  transition: background 0.5s ease;
+  
+}
+
+.tabby-tab label:hover {
+  background: #42c75a; /* Podświetlanie zakładki kursorem */
+}
+
+.tabby-content {
+  position: absolute;
+  text-align: justify; /* Wyjustowanie tekstu */
+  line-height: 1.5; /* Odstępy między linijkami */
+  
+  left: 0; bottom: 0; right: 0;
+  /* clear the tab labels */
+    top: 40px; 
+  
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  background: #27400c; /* Pole z opisem */
+  
+  transition: 
+    opacity 0.8s ease,
+    transform 0.8s ease   ;
+  
+  /* show/hide */
+    opacity: 0;
+    transform: scale(0.1);
+    transform-origin: top left;
+  
+}
+
+.tabby-content img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Działanie zakładek ----- */
+.tabby-tab [type=radio] { display: none; }
+[type=radio]:checked ~ label {
+  background: #27400c;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tabby-content {
+  z-index: 1;
+  
+  /* show/hide */
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* BREAKPOINTS ----- */
+@media screen and (max-width: 767px) {
+  .tabs { min-height: 400px;}
+}
+
+@media screen and (max-width: 480px) {
+  .tabs { min-height: 580px; }
+  .tabby-tab label { 
+    height: 60px;
+  }
+  .tabby-content { top: 60px; }
+  .tabby-content img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 600px) {
+    .cointainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .coin-cointainer {
+        width: 90%;
+    }
+
+    .tabs {
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/imports-styles.css"> <!-- Importowane style CSS -->
+    <link rel="stylesheet" href="css/youtube-styles.css"> <!-- YouTube i kolor nagłówków -->
+
+    <!-- Nazwa strony i favicon -->
+    <title>Odkryj Polskę - strona główna</title>
+    <link rel="icon" type="image/png" href="img/logo_moneta.png">
+</head>
+
+<body>
+    <!-- Menu boczne -->
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image-text">
+                <!--- Logo w menu bocznym -->
+                <span class="image">
+                    <img src="img/logo_moneta.png" alt="logo">
+                </span>
+
+                <!--- Nazwa menu bocznego -->
+                <div class="text header-text">
+                    <span class="name">Monety 5 zł</span>
+                    <span class="subname">"Odkryj Polskę"</span>
+                </div>
+            </div>
+
+            <!-- Strzałka w prawo w menu z https://boxicons.com/?query=arrow + toggle jako przełącznik -->
+            <i class='bx bx-right-arrow-alt toggle' title="Interaktywne menu"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- Wyszukiwanie -->
+                <li class="search-bar">
+                    <!-- Przycisk z https://boxicons.com/ -->
+                    <i class='bx bx-search-alt-2 icon' id="searchIcon" title="Wyszukaj"></i>
+                    <input type="text" id="searchInput" name="search" placeholder="Wyszukaj...">
+                </li>
+                
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-home icon' title="Strona główna"></i>
+                            <span class="text nav-text">Strona główna</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="pages/coins-series.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-coin-stack icon' title="Monety z serii"></i>
+                            <span class="text nav-text">Monety z serii</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="pages/coins-advise.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-news icon' title="Porady"></i>
+                            <span class="text nav-text">Porady</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="pages/coins-game.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-game icon' title="Gra"></i>
+                            <span class="text nav-text">Gra</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="https://kolekcjoner.nbp.pl" target="_blank">
+                        <!-- Przycisk z https://boxicons.com/ -->
+                        <i class='bx bx-shopping-bag icon' title="Kolekcjoner NBP"></i>
+                        <span class="text nav-text">Kolekcjoner NBP</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <!-- Przycisk z https://boxicons.com/ -->
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Tryb nocny</span>
+
+                    <!-- Przełącznik noc-dzień -->
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+
+        <div class="text">
+
+            <div class="series-title">Seria monet 5 zł "Odkryj Polskę"</div>
+
+            <br>
+            <!-- Treść strony głównej -->
+            <div class="series-description">
+                <h1>Opis serii</h1>
+                <p>Seria monet obiegowych z wizerunkiem okolicznościowym emitowana przez Narodowy Bank Polski.</p>
+                <p>Zainaugurowana 22 maja 2014 r. pięciozłotówką „25 lat wolności”.</p>
+                <p>Tematyka serii obejmuje ważne dla Polski rocznice, wydarzenia, miejsca istotne z punktu widzenia
+                    polskiej kultury, nauki czy tradycji.</p>
+                <p>Monety są bite w standardzie metrologicznym obiegowych pięciozłotówek.</p>
+            </div>
+            <br>
+
+            <div class="series-parameters">
+                <h2>Parametry serii</h2>
+                <ul>
+                    <li>Stempel zwykły</li>
+                    <li>Bimetaliczne krążki o masie 6,54 grama i średnicy 24 mm</li>
+                    <li>Moletowany nieregularnie brzeg z ośmiokrotnie powtórzonym napisem „NBP”</li>
+                    <li>Zewnętrzny pierścień z miedzioniklu, rdzeń z brązalu</li>
+                    <li>Awers: Godło Rzeczypospolitej Polskiej, data roczna, znak Mennicy Polskiej</li>
+                    <li>Rewers: Wizerunek związany z tematyką konkretnej emisji</li>
+                </ul>
+            </div>
+            <br>
+
+            <!-- Dodaj sekcję z filmami YouTube -->
+            <div class="youtube-section">
+                <h2>Filmy na YouTube</h2>
+                <p>Zobacz kilka filmów prezentujących monety z naszej kolekcji na YouTube:</p>
+
+                <div class="youtube-gallery">
+                    <div class="youtube-video">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ThzdRU45NpM?si=4kAhw2FZ9tEdXPLq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="video-caption">25 lat wolności</div>
+                    </div>
+
+                    <div class="youtube-video">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/NFLUrKgKDKs?si=jkRZQ_-xJk3KwLvs"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="video-caption">Ratusz w Poznaniu na monecie 5 zł</div>
+                    </div>
+
+                    <div class="youtube-video">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/tOZbAkUoc1I?si=8S-ZzT-uBQlH08k6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="video-caption">100-lecie niepodległej Polski</div>
+                    </div>
+
+                    <div class="youtube-video">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ec4sv7oXp0A?si=kjqIQqRgTj_QYLuj"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <div class="video-caption">Kanał Żeglugowy przez Mierzeję Wiślaną</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/s29097-pj"
+                        target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.youtube.com/@NBPpl"
+                        target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/nbppl"
+                        target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="menu2__item">
+                    <i class='bx bx-home'></i>
+                    <a class="menu2__link" href="index.html">Strona główna</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-coin-stack'></i>
+                    <a class="menu2__link" href="pages/coins-series.html">Monety z serii</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-news'></i>
+                    <a class="menu2__link" href="pages/coins-advise.html">Porady</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-game'></i>
+                    <a class="menu2__link" href="pages/coins-game.html">Gra</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-shopping-bag'></i>
+                    <a class="menu2__link" href="https://kolekcjoner.nbp.pl" target="_blank">Kolekcjoner NBP</a>
+                </li>
+            </ul>
+
+            <p>&copy;2024 by s29097</p>
+
+        </footer>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/sidebar.js"></script> <!-- Sidebar - menu boczne -->
+    <script src="js/search-bar.js"></script> <!-- Pole wyszukiwania -->
+
+</body>
+
+</html>

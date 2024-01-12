@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/imports-styles.css"> <!-- Importowane style CSS -->
+    <link rel="stylesheet" href="../css/coins-series.css">
+    <link rel="stylesheet" href="../css/coins-description.css">
+    <link rel="stylesheet" href="../css/coins-slideshow.css">
+
+    <!-- Nazwa strony i favicon -->
+    <title>Monety z serii</title>
+    <link rel="icon" type="image/png" href="../img/logo_moneta.png">
+</head>
+
+<body>
+    <!-- Menu boczne -->
+    <nav class="sidebar close">
+
+        <header>
+            <div class="image-text">
+                <!--- Logo w menu bocznym -->
+                <span class="image">
+                    <img src="../img/logo_moneta.png" alt="logo">
+                </span>
+
+                <!--- Nazwa menu bocznego -->
+                <div class="text header-text">
+                    <span class="name">Monety 5 zł</span>
+                    <span class="subname">"Odkryj Polskę"</span>
+                </div>
+            </div>
+
+            <!-- Strzałka w prawo w menu z https://boxicons.com/?query=arrow + toggle jako przełącznik -->
+            <i class='bx bx-right-arrow-alt toggle' title="Interaktywne menu"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- Wyszukiwanie -->
+                <li class="search-bar">
+                    <!-- Przycisk z https://boxicons.com/ -->
+                    <i class='bx bx-search-alt-2 icon' id="searchIcon" title="Wyszukaj"></i>
+                    <input type="text" id="searchInput" name="search" placeholder="Wyszukaj...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-home icon' title="Strona główna"></i>
+                            <span class="text nav-text">Strona główna</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/coins-series.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-coin-stack icon' title="Monety z serii"></i>
+                            <span class="text nav-text">Monety z serii</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/coins-advise.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-news icon' title="Porady"></i>
+                            <span class="text nav-text">Porady</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../pages/coins-game.html">
+                            <!-- Przycisk z https://boxicons.com/ -->
+                            <i class='bx bx-game icon' title="Gra"></i>
+                            <span class="text nav-text">Gra</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="https://kolekcjoner.nbp.pl" target="_blank">
+                        <!-- Przycisk z https://boxicons.com/ -->
+                        <i class='bx bx-shopping-bag icon' title="Kolekcjoner NBP"></i>
+                        <span class="text nav-text">Kolekcjoner NBP</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <!-- Przycisk z https://boxicons.com/ -->
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Tryb nocny</span>
+
+                    <!-- Przełącznik noc-dzień -->
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <!-- Slideshow container -->
+        <div class="series-title">Prezentacja monet z serii "Odkryj Polskę"</div>
+        <div class="slideshow-container" id="coin-slides-container"></div>
+
+        <div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center" id="dots-container"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/s29097-pj" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.youtube.com/@NBPpl" target="_blank">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/nbppl" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+            
+            <ul class="menu">
+                <li class="menu2__item">
+                    <i class='bx bx-home'></i>
+                    <a class="menu2__link" href="../index.html">Strona główna</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-coin-stack'></i>
+                    <a class="menu2__link" href="../pages/coins-series.html">Monety z serii</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-news'></i>
+                    <a class="menu2__link" href="../pages/coins-advise.html">Porady</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-game'></i>
+                    <a class="menu2__link" href="../pages/coins-game.html">Gra</a>
+                </li>
+                <li class="menu2__item">
+                    <i class='bx bx-shopping-bag'></i>
+                    <a class="menu2__link" href="https://kolekcjoner.nbp.pl" target="_blank">Kolekcjoner NBP</a>
+                </li>
+            </ul>
+
+            <p>&copy;2024 by s29097</p>
+
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </section>
+
+    <script src="../js/sidebar.js"></script> <!-- Menu boczne -->
+    <script src="../js/coins-slideshow.js"></script> <!-- Monety z serii - pokaz slajdów -->
+    <script src="../js/coins-description.js"></script> <!-- Monety z serii - opis -->
+    <script src="js/search-bar.js"></script> <!-- Pole wyszukiwania -->
+
+</body>
+
+</html>
