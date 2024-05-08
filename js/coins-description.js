@@ -269,6 +269,22 @@ document.addEventListener("DOMContentLoaded", function() {
             awersImage: "../img/2023_20___goscinkowo_A_big.jpg"
         },
 
+        {
+            title: "Opactwo Benedyktynów w Tyńcu",
+            description: `"Opactwo benedyktyńskie w Tyńcu, założone w 1044 r., jest najstarszym istniejącym klasztorem
+            w Polsce. Tym samym jest wyjątkowym świadkiem rozwoju monastycyzmu w Europie oraz długiej i burzliwej historii Polski: od zarania państwowości, 
+            przez złoty wiek, rozbiory, aż do jej odrodzenia w XX w.
+            Pierwotna funkcja miejsca mimo kasaty i zniszczeń w XIX w. się nie zmieniła. Położenie na skalistym wapiennym wzgórzu w zakolu Wisły i otaczający
+            krajobraz, w który zabudowa klasztorna jest wkomponowana, sprawiają, że tynieckie opactwo ma swoisty genius loci – to miejsce spotkania piękna natury,
+            tysiącletniej historii, zabytków i wciąż żywej kultury duchowej oraz gościnności."`,
+            rewers: `"Opactwo Benedyktynów w Tyńcu"`,
+            awers: `"Orzeł polski, znak mennicy, data poniżej 2022. Nazwa kraju RZECZPOSPOLITA POLSKA, nominał u dołu 5 ZŁOTYCH."`,
+            specyfikacja: `"emitent: Narodowy Bank Polski, nominał: 5 zł, metal: stop - pierścień MN25, rdzeń: CuAl6Ni2, stempel: zwykły, 
+            masa: 6,54 g, naklad: do 1 000 000 szt., data emisji: 2024 rok"`,
+            coinImage: "../img/2024_09___tyniec_R.jpg",
+            awersImage: "../img/2024_09___tyniec_A.jpg"
+        },
+
         // Można dodawać kolejne monety po dniu emisji
 
     ];
